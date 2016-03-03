@@ -1,2 +1,3 @@
+#define BENCH_VERSION "@MatrixBench_VERSION@"
 #define BENCH_VERSION_MAJOR @MatrixBench_VERSION_MAJOR@
 #define BENCH_VERSION_MINOR @MatrixBench_VERSION_MINOR@
