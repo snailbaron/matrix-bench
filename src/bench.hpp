@@ -1,15 +1,12 @@
 #ifndef BENCH_HPP
 #define BENCH_HPP
 
-#include <iostream>
+#include <map>
+#include <string>
 
-enum Method
-{
-    SIMPLE,
-};
+typedef void (*MatrixMult)(float *, float *, float *, size_t);
+extern std::map<std::string, MatrixMult> functions;
 
-std::istream & operator>>(std::istream &is, Method &m);
-
-void MatrixMult(float *a, float *b, float *c, size_t n);
+void MatrixMultSimple(float *a, float *b, float *c, size_t n);
 
 #endif

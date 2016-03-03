@@ -1,6 +1,6 @@
 #include "bench.hpp"
 
-void MatrixMult(float *a, float *b, float *c, size_t n)
+void MatrixMultSimple(float *a, float *b, float *c, size_t n)
 {
     for (size_t i = 0; i < n; i++) {
         for (size_t j = 0; j < n; j++) {
